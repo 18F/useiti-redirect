@@ -42,6 +42,31 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/print.css" type="text/css" media="print">
+    <style>
+      body {
+        background-color: #F0F6FA;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      h1 {
+        color: #1C2326;
+        font-size: 22px;
+        line-height: 32px;
+      }
+      p {
+        color: #1C2326;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      a {color: #1478A6}
+      .textbox {
+        width: 70%;
+        background: #fff;
+        border-radius: 4px;
+        padding: 25px;
+        margin: 100px auto;
+        align: center;
+      }
+    </style>
 
     <!-- Scripts -->
     <script src="{{ site.baseurl }}/js/lib/main.min.js"></script>
@@ -53,17 +78,10 @@
 
   <body>
     {% include layout/banner.html %}
-
-    {% include layout/header.html %}
-
-    <main>
-      {% include glossary.html %}
-      {% include layout/nav-drawer.html %}
-
-      {{ content }}
-    </main>
-
-    {% include layout/footer.html %}
+    <div class="textbox">
+      <h1>Natural resources revenue data is now at <a href="fancyurlcode">revenue data.doi.gov</a>. We&rsquo;re redirecting you now.</h1>
+      <p>Didn&rsquo;t  work? <a href="fancyurlcode">Go to the revenue data now</a>.</p>
+    </div>
 
   </body>
 
